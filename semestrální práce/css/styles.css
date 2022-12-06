@@ -1,0 +1,56 @@
+/*CSS styly*/
+
+@media screen and (max-width: 768px) {
+  .hide-responsive {
+    display: none;
+  }
+
+}
+
+p {
+  text-align: justify;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.animace {
+  width: 300px;
+  height: 168px;
+  position: relative;
+  display: inline-block;
+}
+
+.animace img {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  backface-visibility: hidden;
+}
+
+.animace .first {
+  animation: rotate-first 8s linear infinite;
+}
+
+.animace .second {
+  animation: rotate-second 8s linear infinite;
+}
+
+@keyframes rotate-first {
+  from {
+    transform: rotateX(0deg)
+  }
+
+  to {
+    transform: rotateX(180deg)
+  }
+}
+
+@keyframes rotate-second {
+  from {
+    transform: rotateX(180deg)
+  }
+
+  to {
+    transform: rotateX(0deg)
+  }
+}
